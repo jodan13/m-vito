@@ -1,0 +1,22 @@
+.solutions {
+  background-color: $main;
+  padding: 35px 15px;
+  overflow: hidden;
+  text-align: center;
+
+  &__wrap {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &>div>img {
+      height: 200px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__hidden {
+    display: none;
+  }
+}

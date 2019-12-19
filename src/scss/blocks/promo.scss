@@ -1,0 +1,86 @@
+.promo {
+  background: linear-gradient(rgba(0, 48, 77, 0.72)), center url(../img/background.jpg);
+  min-height: 775px;
+  padding: 0 15px;
+
+  &__h1 {
+    font-size: 48px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__p {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: $main-color;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  &__text {
+    margin-left: 10px;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__item:last-child>div>p {
+    margin: 0;
+  }
+
+  &__icon {
+    width: 64px;
+    height: 64px;
+  }
+
+}
+
+.consultation {
+  margin: 0 auto;
+  margin-top: 10px;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__descr {
+    margin-bottom: 25px;
+    text-align: center;
+
+  }
+}
+
+.feed-form {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 300px;
+
+  &>input {
+    height: 45px;
+    background-color: $white;
+    margin-bottom: 15px;
+    border: none;
+    padding: 0 20px;
+    color: #4b4b4b;
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
+
+.svg-wrap {
+  max-width: 100px;
+  margin: 0 auto;
+}

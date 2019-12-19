@@ -1,0 +1,28 @@
+.map {
+  position: relative;
+
+  &__panel {
+    padding: 20px 60px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: hsla(0, 100%, 100%, 0.75);
+
+    &>h3 {
+      color: rgb(0, 157, 255);
+      font-size: 84px; // 64px
+    }
+
+    &>p {
+      color: rgb(51, 51, 51);
+    }
+  }
+}
+
+.map,
+.ymap {
+  height: 400px;
+  width: 100%;
+}

@@ -1,0 +1,42 @@
+.services {
+  background-color: $main;
+  min-height: 500px;
+  text-align: center;
+  overflow: hidden;
+  padding: 35px 15px;
+
+  &__wrap {
+    margin-top: 20px;
+    display: flex;
+    padding: 0 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+
+
+    &>div {
+
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 15px;
+      justify-content: space-between;
+      align-content: stretch;
+      min-height: 380px;
+      width: 180px;
+
+      &>div {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+      }
+    }
+
+  }
+
+  &__img {
+    height: 200px;
+    width: 180px;
+  }
+}

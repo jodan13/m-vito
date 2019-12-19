@@ -1,0 +1,138 @@
+.sliders-wrap {
+  background-image: linear-gradient(to bottom, $main 0%, $main2 100%);
+
+  padding: 35px 15px;
+
+  &>.container {
+    position: relative;
+    margin-bottom: 35px;
+  }
+
+}
+
+.swiper-container {
+  max-width: 600px;
+  height: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+
+  &>h5 {
+    font-size: 22px;
+  }
+
+  &>p {
+
+    padding: 35px 20px;
+  }
+}
+
+.slide10 {
+  &>p {
+    background: linear-gradient(rgba(173, 5, 96, 0.71)), center / 110% 300% no-repeat url(../img/slider-1-background-14.png);
+  }
+}
+
+.slide11 {
+  &>p {
+    background: linear-gradient(rgba(173, 5, 96, 0.71)), center / 110% 300% no-repeat url(../img/slider-1-background-2.png);
+  }
+}
+
+.slide12 {
+  &>p {
+    background: linear-gradient(rgba(173, 5, 96, 0.71)), center / 110% 300% no-repeat url(../img/slider-1-background-3.png);
+  }
+}
+
+.slide13 {
+  &>p {
+    background: linear-gradient(rgba(173, 5, 96, 0.71)), center / 110% 300% no-repeat url(../img/slider-1-background-14.png);
+  }
+}
+
+.slide14 {
+  &>p {
+    background: linear-gradient(rgba(173, 5, 96, 0.71)), center / 110% 300% no-repeat url(../img/slider-1-background-5.png);
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-color: rgb(82, 82, 82);
+  color: rgb(186, 186, 186);
+  opacity: 0.8;
+
+  &:after {
+    font-size: 15px;
+    font-weight: bolder;
+  }
+}
+
+.swiper-button-prev {
+  left: 20%;
+}
+
+.swiper-button-next {
+  right: 20%;
+}
+
+.swiper-pagination-bullet {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: rgb(82, 82, 82);
+  padding: 3px;
+  transition: background-color 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  vertical-align: middle;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: black;
+}
+
+.swiper-pagination-bullet+.swiper-pagination-bullet {
+  margin-left: 10px;
+}
+
+
+.swiper1-slide1 {
+  background-image: url(../img/slider-2-background-1.jpg);
+}
+
+.swiper1-slide2 {
+  background-image: url(../img/slider-2-background-2.jpg);
+}
+
+.swiper1-slide3 {
+  background-image: url(../img/slider-2-background-3.jpg);
+}
+
+.swiper1-slide4 {
+  background-image: url(../img/slider-2-background-4.jpg);
+}
+
+.swiper1-slide5 {
+  background-image: url(../img/slider-2-background-5.jpg);
+}
+
+.swiper1-container {
+  height: 410px;
+}
+
+.swiper1-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 410px;
+}

@@ -1,0 +1,52 @@
+@import 'lib/reboot.min';
+@import 'lib/font';
+
+@import "base/variables";
+@import "base/h2-line";
+@import "base/amination.scss";
+
+
+* {
+  font-family: 'Museo Sans Cyrl', sans-serif;
+  color: $white;
+}
+
+a {
+  color: $white;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+@import "blocks/promo";
+@import "blocks/header";
+@import "blocks/about";
+@import "blocks/buttons";
+@import "blocks/production";
+@import "blocks/services";
+@import "blocks/partners";
+@import "blocks/solutions";
+@import "blocks/sliders";
+@import "blocks/stock";
+@import "blocks/payment.scss";
+@import "blocks/reviews.scss";
+@import "blocks/map.scss";
+@import "blocks/footer.scss";
+@import "blocks/modal.scss";
+
+@import "base/media.scss";

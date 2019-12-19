@@ -1,0 +1,92 @@
+body {
+
+  position: relative;
+}
+
+.body-blackout {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, .5);
+  display: none;
+  z-index: 11;
+
+}
+
+.overlay {
+
+  overflow: scroll;
+  overflow-x: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: none;
+  z-index: 10;
+}
+
+.modal {
+
+  max-width: 600px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: $white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+  padding: 15px;
+  z-index: 12;
+
+  &__header>h4,
+  &__header>button,
+  &__descr,
+  &__body>p,
+  &__body>p>strong,
+  &__body>p>b {
+    color: #333;
+
+  }
+
+  &__descr {
+    width: 100%;
+  }
+
+  &__body>form>input {
+    border: 1px solid #ccc;
+  }
+
+  &__header>button {
+    border: none;
+    background-color: $white;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__body>img {
+    width: 100%;
+  }
+}
+
+#novotex-classic-58,
+#novotex-termo-70,
+#kbe-engine-58,
+#kbe-etalon-58,
+#kbe-balans-70,
+#kbe-expert-70,
+#rehau,
+#knipping-58,
+#knipping-70,
+#colored-laminated,
+#slidors-sliding-58,
+#balconies,
+#form {
+  display: none;
+}
+
+.active {
+  display: block !important;
+}

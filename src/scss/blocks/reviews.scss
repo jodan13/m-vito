@@ -1,0 +1,42 @@
+.reviews {
+  background-image: linear-gradient(to bottom, $main 0%, $main2 100%);
+  overflow: hidden;
+  text-align: center;
+  padding: 35px 15px;
+
+  &__wrap {
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+
+  &__item {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-top: 20px;
+
+    &>img {
+      max-height: 170px;
+    }
+
+    &>div {
+
+      max-width: 320px;
+
+      &>p {
+        text-align: left;
+        padding-left: 10px;
+      }
+
+      &>p:last-child {
+        text-align: right;
+        font-style: italic;
+        font-weight: 700;
+        color: #000;
+      }
+    }
+  }
+}

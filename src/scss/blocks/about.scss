@@ -1,0 +1,25 @@
+.about {
+  background-image: linear-gradient(to bottom, $main2 0%, $main 100%);
+  text-align: center;
+  overflow: hidden;
+  padding: 35px 15px;
+}
+
+.warranties {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+
+  &__item {
+    width: 300px;
+  }
+
+  &__item>img {
+    height: 200px
+  }
+
+  &__item>p {
+    padding-top: 10px;
+  }
+}

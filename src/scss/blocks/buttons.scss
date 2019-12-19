@@ -1,0 +1,41 @@
+.button {
+    width: 110px;
+    height: 30px;
+    background-color: $main-color;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    &_submit {
+        width: 100%;
+        height: 45px;
+        background-color: rgba(255, 32, 125, 0.2);
+        border: 2px solid rgb(255, 32, 125);
+        margin-bottom: 5px;
+
+    }
+
+    &-details {
+        background-color: $btn-color1;
+        margin-right: 10px;
+    }
+
+    &-order {
+        background-color: $btn-color2;
+
+    }
+
+    &-production {
+        width: 300px;
+        height: 45px;
+        background-color: $btn-color2;
+    }
+
+    &-stock {
+        width: 300px;
+        height: 45px;
+        background-color: $btn-color1;
+    }
+}

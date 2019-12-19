@@ -1,0 +1,28 @@
+.payment {
+  background-color: $main;
+  min-height: 500px;
+  text-align: center;
+  overflow: hidden;
+  padding: 35px 15px;
+
+  &__wrap {
+    margin-top: 20px;
+    display: flex;
+    padding: 0 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  &__img-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+
+    &>img {
+      margin-top: 15px;
+      height: 70px;
+    }
+  }
+}

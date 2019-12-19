@@ -1,0 +1,367 @@
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  .logo {
+    height: auto;
+
+    &__img {
+      height: 60px;
+    }
+  }
+
+  .header {
+    &__contacts {
+      max-width: none;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+
+      &>p {
+        width: 100%;
+        text-align: left;
+        font-size: 14px;
+      }
+
+      &>div {
+        flex-wrap: nowrap;
+        width: 85%;
+        justify-content: left;
+
+        &>a {
+          font-size: 13px;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  .promo {
+    &__h1 {
+      font-size: 18px;
+      margin-top: 25px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &__p {
+      display: none;
+    }
+  }
+
+  .advantages {
+    flex-direction: column-reverse;
+
+    &__wrapper {
+      margin-top: 20px;
+    }
+  }
+
+  .consultation {
+    &__title {
+      font-size: 15px;
+    }
+
+    &____descr {
+      font-size: 0.8rem;
+    }
+  }
+
+  .warranties {
+    justify-content: center;
+  }
+
+  .production {
+    padding: 35px 0px;
+
+    &__item {
+      max-width: 331px;
+      min-width: 320px;
+      margin: 0;
+      margin-bottom: 10px;
+      height: auto;
+      flex-direction: column;
+
+      &>img {
+        max-width: 90px;
+      }
+
+      &>div>div {
+        min-width: 230px;
+      }
+    }
+
+    &__content {
+
+      justify-content: center;
+
+    }
+  }
+
+  .services__wrap {
+
+    justify-content: center;
+
+    &>div {
+      margin: 10px;
+    }
+
+  }
+
+  .partners__img-wrap {
+
+    justify-content: center;
+  }
+
+  .solutions__wrap {
+    justify-content: center;
+
+    &>div {
+      margin: 10px;
+    }
+  }
+
+  .feed-form {
+
+    max-width: 270px;
+  }
+
+  .stock {
+    &>.container {
+      padding: 0px;
+    }
+
+    &__col:first-child>img {
+      margin-right: 10px;
+      display: none;
+
+    }
+  }
+
+  .button-stock {
+    min-width: 270px;
+    width: 100%;
+  }
+
+  .reviews__item {
+    width: 100%;
+    justify-content: center;
+  }
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .header__contacts {
+    max-width: 250px;
+    width: 80%;
+    justify-content: center;
+  }
+
+  header {
+    justify-content: start;
+
+  }
+
+  nav {
+    width: auto;
+  }
+
+  .logo {
+    width: 40%;
+  }
+}
+
+@media (max-width: 767.98px) {
+
+  .menu {
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.6s all;
+
+    &_active {
+      left: 0;
+    }
+
+    &__item {
+      padding-right: 0;
+      border: none;
+      margin: 10px;
+      width: 100%;
+      padding: 5px 0;
+      text-align: center;
+    }
+
+    &__link {
+      font-size: 20px;
+      display: block;
+    }
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 34px;
+    top: 45px;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 12px;
+
+    span {
+      display: block;
+      height: 1.5px;
+      width: 100%;
+      background-color: #fff;
+      margin-bottom: 4.5px;
+      transition: 0.5s all;
+    }
+
+    &_active {
+      span {
+        margin-bottom: -2px;
+
+        &:nth-child(1) {
+          transform: translateY(3px) rotate(-45deg);
+        }
+
+        &:nth-child(2) {
+          display: none;
+        }
+
+        &:nth-child(3) {
+          transform: translateY(3px) rotate(45deg);
+        }
+      }
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+
+  }
+
+  .map {
+    &__panel {
+      padding: 15px 30px;
+
+      &>h3 {
+        font-size: 25px;
+      }
+    }
+
+  }
+
+  .footer {
+    flex-wrap: wrap;
+
+    &>div:first-child,
+    &>div {
+      width: 100%;
+    }
+
+    &__contacts {
+      justify-content: center;
+      width: 100%;
+
+      &>div {
+        width: 70%;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .logo {
+    height: 100px;
+
+    &__img {
+      height: 100px;
+    }
+  }
+
+  .header__contacts {
+    display: flex;
+    max-width: 200px;
+    width: 25%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    &>p {
+      text-align: right;
+      font-size: 16px;
+    }
+
+    &>div>a {
+      font-size: 20px;
+    }
+  }
+
+  .swiper-button-prev {
+    left: 5%;
+
+  }
+
+  .swiper-button-next {
+    right: 5%;
+
+  }
+
+  .map__panel>h3 {
+    font-size: 64px;
+  }
+
+  .footer__contacts {
+    &>img {
+      margin-right: 0;
+    }
+
+    &>div>a {
+      font-size: 12px;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .swiper-button-prev {
+    left: 10%;
+
+  }
+
+  .swiper-button-next {
+    right: 10%;
+
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
+
+@media (max-width: 991.98px) {}
+
+.production {
+  &__content {
+    justify-content: center;
+  }
+}
+
+.warranties {
+  justify-content: center;
+}
+
+.swiper-pagination {
+  width: 100%;
+}

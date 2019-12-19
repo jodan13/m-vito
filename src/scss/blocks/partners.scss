@@ -1,0 +1,29 @@
+.partners {
+  padding: 35px 15px;
+  overflow: hidden;
+  text-align: center;
+
+  &>h2 {
+    color: #333;
+
+    &::after,
+    &::before {
+      background-color: #333;
+    }
+  }
+
+  &>p {
+    color: #333;
+  }
+
+  &__img-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &>img {
+
+      height: 70px;
+    }
+  }
+}

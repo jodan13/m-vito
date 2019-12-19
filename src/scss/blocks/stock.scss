@@ -1,0 +1,48 @@
+.stock {
+  background: linear-gradient(rgba(0, 48, 77, 0.72)), center url(../img/background3.jpg);
+  min-height: 100px;
+  padding: 35px 15px;
+
+  &>.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    background-color: rgba(0, 0, 0, 0.43);
+    padding: 35px;
+  }
+
+  &__col {
+    margin-top: 20px;
+  }
+
+  &__col:first-child {
+    display: flex;
+
+    &>img {
+      // padding: auto 30px;
+      margin-right: 30px;
+      width: 60px;
+    }
+
+    &>div {
+      text-align: center;
+      width: 100%;
+
+      &>h3 {
+        background-color: rgba(250, 92, 177, 0.65);
+      }
+
+      &>div {
+        width: 100%;
+        border-top: 1px dashed rgb(255, 255, 255);
+      }
+
+      &>h4 {
+        margin-top: .5rem;
+        background-image: linear-gradient(to bottom, rgba(250, 92, 177, 0.8) 0%, rgba(250, 92, 177, 0.2) 100%);
+      }
+    }
+
+  }
+}
